@@ -2,42 +2,31 @@
 const menu = document.querySelector('.nav');
 const menuButton = document.querySelector('.button-box');
 
-menuButton.addEventListener('click', function() {
+menuButton.addEventListener('click', function () {
     menu.classList.toggle('nav--active');
 })
-$(document).ready(function(){
-    // Activate the Carousel, but pause it from the start
-                $("#myCarousel").carousel({interval: false});
+$(document).ready(function () {
+    $("#myCarousel").carousel({ interval: false });
 
-    // Go to the second item
-    $("#myBtn").click(function(){
+    $("#myBtn").click(function () {
         $("#myCarousel").carousel(1);
     });
 
-    // Go to the third item
-    $("#myBtn2").click(function(){
+    $("#myBtn2").click(function () {
         $("#myCarousel").carousel(2);
     });
-       // Go to the third item
-    $("#myBtn3").click(function(){
+    $("#myBtn3").click(function () {
         $("#myCarousel").carousel(0);
-    });
-    // Enable Carousel Indicators
-    $(".item1").click(function(){
-        $("#myCarousel").carousel(0);
-    });
-    $(".item2").click(function(){
-        $("#myCarousel").carousel(1);
-    });
-    $(".item3").click(function(){
-        $("#myCarousel").carousel(2);
-    });
-    
-    // Enable Carousel Controls
-    $(".carousel-control-prev").click(function(){
-        $("#myCarousel").carousel("prev");
-    });
-    $(".carousel-control-next").click(function(){
-        $("#myCarousel").carousel("next");
     });
 });
+const key = '0b3d75e5a49f2a267f054a0a60bed6f3'
+
+setInterval(function () {
+    fetch(`http://api.openweathermap.org/data/2.5/weather?q=Lublin&units=metric&APPID=${key}`)
+    .then(response => response.json())
+    .then(data => console.log(data))
+}, 30000);
+
+
+
+
