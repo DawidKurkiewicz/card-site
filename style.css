@@ -13,13 +13,13 @@ body{
     box-shadow: 3px 0 15px #000;
     list-style: none;
     justify-content: center;
+    z-index: 9999;
 
   }
 .nav--active {
     top: 0;
-
   }
-  
+
   .btn-danger {
     background-color: gray;
     border-color: slategray
@@ -40,7 +40,7 @@ body{
     border-color: slategray
 
   }
- 
+
   .button-box {
     cursor: pointer;
     position: fixed;
@@ -48,6 +48,8 @@ body{
     right: 30px;
     height: 40px;
     width: 40px;
+    z-index: 9999;
+
   }
 
   .button-box__button {
@@ -172,19 +174,13 @@ body{
         padding: 0 ;
         margin: 0 ;
     }
+    .section-menu__list--item {
+        padding: 20px;
+    }
 
-.section-menu__list--link:hover {
-    background-color: black;
-  }
-.section-menu__list--link{
-    background:#383838;
-    text-align: center;
-    display: block;
-    padding: 10px;
-    color: white;
-    font-size: 25px;
-    text-decoration: none;
-}
+ 
+
+
 
 .back-img{
     max-height: 250px;
@@ -234,6 +230,10 @@ body{
     .section-me__logos{
         flex-direction: row;
     }
+    .section-menu__list--item {
+        padding: 5px;
+    }
+ 
 }
 
 
