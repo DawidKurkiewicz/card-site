@@ -19,7 +19,9 @@ body{
 .nav--active {
     top: 0;
 }
-
+.btn{
+    width:150px
+}
 #weather {
     list-style: none;
 }
@@ -270,7 +272,16 @@ body{
         flex-direction: column-reverse;
         height: 350px
     }
-
+    .Footer{
+        display:none
+    }
+}
+@media only screen and (max-width: 430px) {
+    .section-first-el__container{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 400px
+    }
 }
 
 

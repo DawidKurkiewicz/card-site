@@ -42,9 +42,9 @@ fetch(url)
             let li = createNode('li'),
                 div = createNode('div')
             div.innerHTML =
-                `<div class=temperature>temperatura : ${data.main.temp}</div>
-                <div> zachmurzenie: ${data.clouds.all} % </div>
-                <div> wilgotność: ${data.main.humidity} %</div>`;
+                `<div class=temperature>temperatura : ${data.main.temp} C</div>
+                <div> wilgotność: ${data.main.humidity} %</div>
+                <div> opady: <img src = 'http://openweathermap.org/img/w/${data.weather[0].icon}.png'></div>`;
 
             append(li, div);
             append(ul, li);
