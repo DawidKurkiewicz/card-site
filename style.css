@@ -184,11 +184,9 @@ body{
     .section-menu__list--item {
         padding: 20px;
     }
-
- 
-
-
-
+.temp {
+    margin: 10px
+}
 .back-img{
     max-height: 250px;
     max-width: 250px;

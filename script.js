@@ -40,8 +40,8 @@ fetch_data = (url) => {
     .then(function (data) {
         let currentWeather = data.weather;
         return currentWeather.map(function() {
-            document.querySelector('.temp').innerHTML = `temperatura: ${data.main.temp} C`;
-            document.querySelector('.humidity').innerHTML = `wilgotność: ${data.main.humidity} %`;
+            document.querySelector('.temp').innerHTML = `Temperatura: ${data.main.temp} C`;
+            document.querySelector('.humidity').innerHTML = `Wilgotność: ${data.main.humidity} %`;
             document.querySelector(".icon").src = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
         })
     })
