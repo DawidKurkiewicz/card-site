@@ -1,3 +1,3 @@
-You can check this project on https://dawidkurkiewicz.github.io/recrutation-task2/
+You can check this project on https://dawidkurkiewicz.github.io/card-site/
 
 Or just clone repository and view it locally
